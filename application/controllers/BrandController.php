@@ -42,7 +42,7 @@ class BrandController extends CI_Controller
         $this->load->view('brand/list');
         $this->load->view('admin_template/footer');
     }
-    public function store()
+    public function add()
     {
         $this->form_validation->set_rules('title', 'Title', 'trim|required', [
             'required' => 'Bạn nên điền %s'
@@ -85,7 +85,8 @@ class BrandController extends CI_Controller
                 redirect(base_url('brand/list'));
             }
         } else {
-            $this->create();
+            $this->create();    
+            // redirect(base_url('brand/create'));
         }
     }
 

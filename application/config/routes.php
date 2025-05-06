@@ -65,11 +65,11 @@ $route['brand/list']['GET']= 'BrandController/index';
 $route['brand/delete/(:any)']['GET']= 'BrandController/delete/$1';
 $route['brand/edit/(:any)']['GET']= 'BrandController/edit/$1';
 $route['brand/update/(:any)']['POST']= 'BrandController/update/$1';
-$route['brand/store']['POST']= 'BrandController/store';
+$route['brand/add']['POST']= 'BrandController/add';
 //category
 $route['category/create']['GET']='CategoriesController/create';
 $route['category/list']['GET']= 'CategoriesController/index';
 $route['category/delete/(:any)']['GET']= 'CategoriesController/delete/$1';
 $route['category/edit/(:any)']['GET']= 'CategoriesController/edit/$1';
 $route['category/update/(:any)']['POST']= 'CategoriesController/update/$1';
-$route['category/store']['POST']= 'CategoriesController/store';
+$route['category/add']['POST']= 'CategoriesController/add';

@@ -1,7 +1,7 @@
 <div class="container">
     <div class="card">
         <div class="card-header">
-            LIST OF BRANDS
+            LIST OF BRAND
         </div>
         <div class="card-body">
             <table class="table table-striped">
@@ -15,12 +15,13 @@
                         <th scope="col">Manage</th>
                     </tr>
                 </thead>
+                
                 <tbody>
                     <?php
                     foreach ($brands as $key => $bra) {
                     ?>
                         <tr>
-                            <th scope="row"><?php echo $key; ?></th>
+                            <th scope="row"><?php echo $key+1; ?></th>
                             <td><?php echo $bra['title'] ?></td>
                             <td><?php echo $bra['description'] ?></td>
                             <td>

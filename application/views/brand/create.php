@@ -15,7 +15,7 @@
             <?php
             }
             ?>
-            <form action="<?php echo base_url('brand/store') ?>" method="POST" enctype="multipart/form-data">
+            <form action="<?php echo base_url('brand/add') ?>" method="POST" enctype="multipart/form-data">
                 <div class="form-group">
                     <label for="exampleInputEmail1">Tên sản phẩm</label>
                     <input type="text" name="title" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">

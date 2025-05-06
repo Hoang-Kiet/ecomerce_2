@@ -10,18 +10,18 @@ class CategoryModel extends CI_Model {
         $query = $this->db->get('categories');
         return $query->result_array();
     }
-    // public function selectCategoryId($id)
-    // {
-    //     $query = $this->db->get_where('category', ['id' => $id]);
-    //     return $query->row_array();
-    // }
-    // public function updateCategory($id, $data)
-    // {
-    //     return $this->db->update('category', $data, ['id' => $id]);
-    // }
+    public function selectCategoryId($id)
+    {
+        $query = $this->db->get_where('categories', ['id' => $id]);
+        return $query->row_array();
+    }
+    public function updateCategory($id, $data)
+    {
+        return $this->db->update('categories', $data, ['id' => $id]);
+    }
 
-    // public function deleteCategory($id){
-    //     $this->db->where('id', $id);
-    //     return $this->db->delete('category');
-    // }
+    public function deleteCategory($id){
+        $this->db->where('id', $id);
+        return $this->db->delete('category');
+    }
 }
